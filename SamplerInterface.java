@@ -5,5 +5,5 @@
 */
 public interface SamplerInterface {
     /*! returns the current value of whichever datasource it is sampling */
-    int getSample();
+    Sample getSample();
 }

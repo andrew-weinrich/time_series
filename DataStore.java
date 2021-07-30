@@ -8,19 +8,15 @@ import java.lang.ArrayIndexOutOfBoundsException;
     value is not in the datastore.
 */
 public interface DataStore {
-    
     /*! Adds a sample to the datastore */
     void addSample(Sample sample);
     
     /*! Applies an aggregation function */
-    int aggregate(AggregatorInterface aggreagator);
-    
+    int aggregate(AggregatorInterface aggregator);
     
     /*! Returns the nearest value to the requested time, rounded up */
     int getValue(Date time) throws ArrayIndexOutOfBoundsException;
     
-    
     /*! Returns the value at the specific sample interval */
     int getValue(int sampleIndex) throws ArrayIndexOutOfBoundsException;
-    
 }

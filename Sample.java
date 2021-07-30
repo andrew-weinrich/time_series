@@ -1,4 +1,3 @@
-
 import java.util.Date;
 
 /*! This class represent a single timestamped value in a data stream */
