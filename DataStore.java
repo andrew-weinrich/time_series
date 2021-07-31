@@ -14,9 +14,6 @@ public interface DataStore {
     /*! Applies an aggregation function */
     int aggregate(AggregatorInterface aggregator);
     
-    /*! Returns the nearest value to the requested time, rounded up */
-    int getValue(Date time) throws ArrayIndexOutOfBoundsException;
-    
     /*! Returns the value at the specific sample interval */
     int getValue(int sampleIndex) throws ArrayIndexOutOfBoundsException;
 }

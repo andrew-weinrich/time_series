@@ -6,7 +6,7 @@ import java.lang.ArrayIndexOutOfBoundsException;
     Any aggregation will temporarily lock the array
     Currently in development!
 */
-public class ArrayDataSource implements DataStore {
+public class ArrayDataStore implements DataStore {
     private Sample[] samples;
     private int currentSampleIndex = 0;
     
@@ -18,10 +18,6 @@ public class ArrayDataSource implements DataStore {
     }
     
     public int aggregate(AggregatorInterface aggregator) {
-        return 0;
-    }
-    
-    public int getValue(Date time) throws ArrayIndexOutOfBoundsException {
         return 0;
     }
     
